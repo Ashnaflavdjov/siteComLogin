@@ -1,0 +1,83 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html, body{
+    height: 100%;
+}
+
+header{
+    background-color: blueviolet;
+    padding: 10px 5px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#icon{
+    width: 100px;
+}
+
+#icon img{
+    width: 54px;
+}
+
+#icon:hover{
+    cursor: pointer;
+}
+
+.botoes{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: chartreuse;
+    width: 50%;
+}
+
+.botoes a{
+    text-decoration: none;
+    color: black;
+}
+
+.hButton{
+    background-color: orangered;
+    text-align: center;
+    font-size: 20px;
+    width: 100px;
+    padding: 15px 0;
+}
+
+#loginButton div{
+    color: black;
+}
+
+#loginButton:hover{
+    cursor: pointer;
+}
+
+#secondBody{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.middleCollumn {
+    width: 50%;
+    height: 100%;
+    overflow-y: auto;
+    background-color: brown;
+}
+
+#loginForm, #registerForm{
+    border: 2px black solid;
+    margin: 20px auto;
+    width: fit-content;
+}
+
+#loginForm div, #registerForm div{
+    width: fit-content;
+    margin: 5px auto;
+}
