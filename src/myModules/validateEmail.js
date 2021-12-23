@@ -1,5 +1,5 @@
 const fetch = (...args) => import('node-fetch').then(({default: fetch}) => fetch(...args));
-const db = require("./dataBase");
+const db = require("../../server/svModules/dataBase");
 
 function emailApi(info){
 

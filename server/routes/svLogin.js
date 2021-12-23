@@ -1,6 +1,6 @@
 const express = require("express");
 const router = express.Router();
-const db = require("../src/myModules/dataBase");
+const db = require("../svModules/dataBase");
 
 router.get("/", (req, res, next) => {
 
