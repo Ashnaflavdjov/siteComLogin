@@ -25,8 +25,6 @@ async function getData(info){
             result.password = doc.data().password;
         })
 
-        console.log(result.email, result.password);
-
         if(info.email === result.email && info.senha === result.password){
 
             return true;
@@ -36,10 +34,7 @@ async function getData(info){
         }
     })
 
-    if(await confirma == true){
-        console.log("gg");
-        return true;
-    }
+    return await confirma;
 }
 
 async function insertData(info){

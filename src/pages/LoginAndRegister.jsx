@@ -100,7 +100,7 @@ function sendRegisterForm(){
     fetch(`http://192.168.0.106:3001/register`, {method: "POST", headers: {"Content-type": "application/json; charset=UTF-8"}, body: JSON.stringify({name, email, senha, phoneNumber})})
     .then(resposta => resposta.json()).then(resposta => {
 
-        console.log(resposta);
+        alert(resposta);
     });
 }
 
