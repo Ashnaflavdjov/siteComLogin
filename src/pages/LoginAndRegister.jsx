@@ -71,7 +71,7 @@ function sendLoginForm(){
 
     email = email.toString().toLowerCase();
 
-    fetch(`http://192.168.0.106:3001/login`, {method: "POST", headers: {"Content-type": "application/json; charset=UTF-8"}, body: JSON.stringify({email, senha})})
+    fetch(`https://site-com-login-backend.herokuapp.com/login`, {method: "POST", headers: {"Content-type": "application/json; charset=UTF-8"}, body: JSON.stringify({email, senha})})
     .then(resposta => resposta.json())
     .then(resposta => {
         
@@ -97,7 +97,7 @@ function sendRegisterForm(){
 
     email = email.toString().toLowerCase();
 
-    fetch(`http://192.168.0.106:3001/register`, {method: "POST", headers: {"Content-type": "application/json; charset=UTF-8"}, body: JSON.stringify({name, email, senha, phoneNumber})})
+    fetch(`https://site-com-login-backend.herokuapp.com/register`, {method: "POST", headers: {"Content-type": "application/json; charset=UTF-8"}, body: JSON.stringify({name, email, senha, phoneNumber})})
     .then(resposta => resposta.json()).then(resposta => {
 
         alert(resposta);
